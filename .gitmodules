@@ -1,0 +1,3 @@
+[submodule "ruby/store"]
+	path = ruby/store
+	url = https://github.com/leblancr/store
