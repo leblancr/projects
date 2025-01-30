@@ -13,3 +13,6 @@
 [submodule "python/xword_puzzle"]
 	path = python/xword_puzzle
 	url = https://github.com/leblancr/xword_puzzle.git
+[submodule "python/django_react_notes"]
+	path = python/django_react_notes
+	url = https://github.com/leblancr/django_react_notes/
