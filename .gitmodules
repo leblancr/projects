@@ -1,3 +1,6 @@
 [submodule "ruby/store"]
 	path = ruby/store
 	url = https://github.com/leblancr/store
+[submodule "ruby/blog"]
+	path = ruby/blog
+	url = https://github.com/leblancr/blog
