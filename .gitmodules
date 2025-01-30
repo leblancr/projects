@@ -7,3 +7,6 @@
 [submodule "ruby/ruby-koans"]
 	path = ruby/ruby-koans
 	url = https://github.com/leblancr/ruby-koans
+[submodule "python/asyncio_tutorial"]
+	path = python/asyncio_tutorial
+	url = https://github.com/leblancr/asyncio_tutorial.git
