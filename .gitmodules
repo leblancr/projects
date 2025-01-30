@@ -10,3 +10,6 @@
 [submodule "python/asyncio_tutorial"]
 	path = python/asyncio_tutorial
 	url = https://github.com/leblancr/asyncio_tutorial.git
+[submodule "python/xword_puzzle"]
+	path = python/xword_puzzle
+	url = https://github.com/leblancr/xword_puzzle.git
