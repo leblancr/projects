@@ -16,3 +16,6 @@
 [submodule "python/django_react_notes"]
 	path = python/django_react_notes
 	url = https://github.com/leblancr/django_react_notes/
+[submodule "python/pymongo-fastapi-crud-vue"]
+	path = python/pymongo-fastapi-crud-vue
+	url = https://github.com/leblancr/pymongo-fastapi-crud-vue
