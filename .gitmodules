@@ -22,3 +22,6 @@
 [submodule "python/rewrite-it-in-rust"]
 	path = python/rewrite-it-in-rust
 	url = https://github.com/leblancr/rewrite-it-in-rust
+[submodule "python/mongodb_examples"]
+	path = python/mongodb_examples
+	url = https://github.com/leblancr/mongodb_examples.git
