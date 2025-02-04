@@ -25,3 +25,6 @@
 [submodule "python/mongodb_examples"]
 	path = python/mongodb_examples
 	url = https://github.com/leblancr/mongodb_examples.git
+[submodule "python/mongodb_tutorials"]
+	path = python/mongodb_tutorials
+	url = https://github.com/leblancr/mongodb_tutorials
