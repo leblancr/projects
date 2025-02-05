@@ -34,3 +34,6 @@
 [submodule "python/fastapi_course"]
 	path = python/fastapi_course
 	url = http://github.com/leblancr/fastapi-course
+[submodule "python/django_tutorial"]
+	path = python/django_tutorial
+	url = http://github.com/leblancr/django_tutorial
