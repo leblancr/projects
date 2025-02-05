@@ -37,3 +37,6 @@
 [submodule "python/django_tutorial"]
 	path = python/django_tutorial
 	url = http://github.com/leblancr/django_tutorial
+[submodule "elixir/elixir_tutorial"]
+	path = elixir/elixir_tutorial
+	url = https://github.com/leblancr/elixer_tutorial.git
