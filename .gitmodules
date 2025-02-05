@@ -31,3 +31,6 @@
 [submodule "python/flask_react_and_postgres"]
 	path = python/flask_react_and_postgres
 	url = https://github.com/leblancr/flask_react_and_postgres.git
+[submodule "python/fastapi_course"]
+	path = python/fastapi_course
+	url = http://github.com/leblancr/fastapi-course
