@@ -28,3 +28,6 @@
 [submodule "python/mongodb_tutorials"]
 	path = python/mongodb_tutorials
 	url = https://github.com/leblancr/mongodb_tutorials
+[submodule "python/flask_react_and_postgres"]
+	path = python/flask_react_and_postgres
+	url = https://github.com/leblancr/flask_react_and_postgres.git
