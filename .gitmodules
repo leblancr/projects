@@ -88,3 +88,6 @@
 [submodule "elixir/first_api"]
 	path = elixir/first_api
 	url = https://github.com/leblancr/first_api
+[submodule "elixir/erl_tutorial"]
+	path = elixir/erl_tutorial
+	url = https://github.com/leblancr/erl_tutorial
