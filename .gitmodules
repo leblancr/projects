@@ -67,3 +67,6 @@
 [submodule "javascript/svelte-tutorial"]
 	path = javascript/svelte-tutorial
 	url = https://github.com/leblancr/svelte-tutorial
+[submodule "javascript/superheros"]
+	path = javascript/superheros
+	url = https://github.com/leblancr/superhero
