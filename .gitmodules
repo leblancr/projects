@@ -73,3 +73,6 @@
 [submodule "javascript/npm-experiment"]
 	path = javascript/npm-experiment
 	url = https://github.com/leblancr/npm-experiment
+[submodule "javascript/moz-todo-vue"]
+	path = javascript/moz-todo-vue
+	url = https://github.com/leblancr/moz-todo-vue/
