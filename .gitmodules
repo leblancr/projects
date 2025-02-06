@@ -64,3 +64,6 @@
 [submodule "javascript/vue-tutorial"]
 	path = javascript/vue-tutorial
 	url = https://github.com/leblancr/vue-tutorial.git
+[submodule "javascript/svelte-tutorial"]
+	path = javascript/svelte-tutorial
+	url = https://github.com/leblancr/svelte-tutorial
