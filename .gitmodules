@@ -52,3 +52,6 @@
 [submodule "phoenix/real_deal_api"]
 	path = phoenix/real_deal_api
 	url = https://github.com/leblancr/real_deal_api.git
+[submodule "phoenix/hello"]
+	path = phoenix/hello
+	url = https://github.com/leblancr/hello.git
