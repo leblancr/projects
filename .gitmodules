@@ -43,3 +43,6 @@
 [submodule "python/gil_tutorial"]
 	path = python/gil_tutorial
 	url = https://github.com/leblancr/gil_tutorial.git
+[submodule "elixir/project_management_example"]
+	path = elixir/project_management_example
+	url = https://github.com/leblancr/project_management_example.git
