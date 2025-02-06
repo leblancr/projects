@@ -79,3 +79,6 @@
 [submodule "javascript/moz-todo-react"]
 	path = javascript/moz-todo-react
 	url = https://github.com/leblancr/moz-todo-react/
+[submodule "javascript/ember-todomvc"]
+	path = javascript/ember-todomvc
+	url = https://github.com/leblancr/ember-todomvc/
