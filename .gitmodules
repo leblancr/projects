@@ -58,3 +58,6 @@
 [submodule "phoenix/elixir_gist"]
 	path = phoenix/elixir_gist
 	url = https://github.com/leblancr/elixir_gist.git
+[submodule "leetcode"]
+	path = leetcode
+	url = https://github.com/leblancr/leetcode.git
