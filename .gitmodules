@@ -85,3 +85,6 @@
 [submodule "elixir/mix_example"]
 	path = elixir/mix_example
 	url = https://github.com/leblancr/mix_example
+[submodule "elixir/first_api"]
+	path = elixir/first_api
+	url = https://github.com/leblancr/first_api
