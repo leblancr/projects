@@ -55,3 +55,6 @@
 [submodule "phoenix/hello"]
 	path = phoenix/hello
 	url = https://github.com/leblancr/hello.git
+[submodule "phoenix/elixir_gist"]
+	path = phoenix/elixir_gist
+	url = https://github.com/leblancr/elixir_gist.git
