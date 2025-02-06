@@ -82,3 +82,6 @@
 [submodule "javascript/ember-todomvc"]
 	path = javascript/ember-todomvc
 	url = https://github.com/leblancr/ember-todomvc/
+[submodule "elixir/mix_example"]
+	path = elixir/mix_example
+	url = https://github.com/leblancr/mix_example
