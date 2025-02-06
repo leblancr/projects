@@ -46,3 +46,9 @@
 [submodule "elixir/project_management_example"]
 	path = elixir/project_management_example
 	url = https://github.com/leblancr/project_management_example.git
+[submodule "phoenix/real_deal_ap"]
+	path = phoenix/real_deal_ap
+	url = https://github.com/leblancr/real_deal_api.git
+[submodule "phoenix/real_deal_api"]
+	path = phoenix/real_deal_api
+	url = https://github.com/leblancr/real_deal_api.git
