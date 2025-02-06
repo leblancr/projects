@@ -76,3 +76,6 @@
 [submodule "javascript/moz-todo-vue"]
 	path = javascript/moz-todo-vue
 	url = https://github.com/leblancr/moz-todo-vue/
+[submodule "javascript/moz-todo-react"]
+	path = javascript/moz-todo-react
+	url = https://github.com/leblancr/moz-todo-react/
