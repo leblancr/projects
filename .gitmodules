@@ -61,3 +61,6 @@
 [submodule "leetcode"]
 	path = leetcode
 	url = https://github.com/leblancr/leetcode.git
+[submodule "javascript/vue-tutorial"]
+	path = javascript/vue-tutorial
+	url = https://github.com/leblancr/vue-tutorial.git
