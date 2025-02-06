@@ -40,3 +40,6 @@
 [submodule "elixir/elixir_tutorial"]
 	path = elixir/elixir_tutorial
 	url = https://github.com/leblancr/elixer_tutorial.git
+[submodule "python/gil_tutorial"]
+	path = python/gil_tutorial
+	url = https://github.com/leblancr/gil_tutorial.git
