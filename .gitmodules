@@ -91,3 +91,6 @@
 [submodule "elixir/erl_tutorial"]
 	path = elixir/erl_tutorial
 	url = https://github.com/leblancr/erl_tutorial
+[submodule "elixir/elixir_full_course"]
+	path = elixir/elixir_full_course
+	url = https://github.com/leblancr/elixir_full_course
