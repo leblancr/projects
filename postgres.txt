@@ -1,0 +1,117 @@
+Arch:
+
+
+Gentoo:
+sudo rc-service nginx status
+sudo rc-service apache24 status
+sudo rc-service postgresql-16 status
+
+sudo emerge --ask dev-db/postgresql
+emerge --config dev-db/postgresql:16
+sudo rc-update add postgresql-16 default
+ * service postgresql-16 added to runlevel default
+sudo /etc/init.d/postgresql-16 start
+ * /run/postgresql: creating directory
+ * /run/postgresql: correcting owner
+ * Starting PostgreSQL 16 ...
+
+ sudo rc-service postgresql-16 status
+ * Checking PostgreSQL 16 status ...
+pg_ctl: server is running (PID: 10759)
+/usr/lib64/postgresql-16/bin/postgres "-D" "/etc/postgresql-16" "--data-directory=/var/lib/postgresql/16/data" "--unix-socket-directories=/run/postgresql"
+
+pgadmin4 available, needs venv setup
+  https://ogris.de/howtos/gentoo-pgadmin4.html
+  Can't use fish, change to bash first then activate venv
+  rich@a960d ~> bash
+  rich@a960d:~
+  $ source ~/bin/pgadmin4/bin/activate
+  or
+  $ . ~/bin/pgadmin4/bin/activate
+  (pgadmin4) rich@a960d:~
+  $ pgadmin4
+  Starting pgAdmin 4. Please navigate to http://127.0.0.1:5050 in your browser.
+  * Serving Flask app 'pgadmin'
+  * Debug mode: off
+
+
+  email: rkbanwct@proton.me
+  pwd: ****pga
+  http://127.0.0.1:5050/browser/
+
+  dbeaver 23.3.0 - download portage overlay from: https://gpo.zugaina.org/dev-db/dbeaver-bin browse DATABASE
+
+
+FreeBSD 14:
+sudo synth install databases/phppgadmin@php83
+sudo synth install databases/postgresql15-client
+sudo synth install databases/postgresql15-server
+sudo chown -R postgres:postgres /var/db/postgres/data15/
+
+sudo service nginx status
+sudo service apache24 status
+sudo service postgresql status
+
+To initialize the database, run
+  /usr/local/etc/rc.d/postgresql initdb
+You can then start PostgreSQL by running:
+  /usr/local/etc/rc.d/postgresql start
+or
+sudo service postgresql start
+
+PgAdmin:
+    https://wiki.freebsd.org/PostgreSQL/Setup
+    virtualenv pgadmin4
+    . pgadmin4/bin/activate
+    pip install poetry
+    mkdir -p /var/lib/pgadmin /var/log/pgadmin
+phpPgAdmin:
+
+--------Common --------
+To restore databases to new pc:
+  from source - pg_dumpall > backup.sql
+  copy file to destination
+  on destination:
+    admin login: psql -U postgres -d postgres
+    CREATE ROLE rich WITH LOGIN;
+    psql -U postgres -f backup.sql
+
+psql -U rich -d rich
+psql -U postgres
+psql (16.1, server 15.4)
+Type "help" for help.
+
+Password for user postgres: r***pos rich: r***pos
+
+Change 'trust' to 'password' for the local connection:
+root #nano -w /etc/postgresql-16/pg_hba.conf
+postgres=# \q
+
+Now have the database reload the configuration:
+root #/etc/init.d/postgresql-16 reload
+* Reloading PostgreSQL 16 configuration ...
+
+Finally, once everything works as it should, have PostgreSQL start at boot:
+
+root ## rc-update add postgresql-16 default
+ * service postgresql-16 added to runlevel default
+
+admin login: psql -U postgres -d postgres
+CREATE ROLE rich WITH LOGIN;
+CREATE DATABASE rich WITH OWNER rich;
+
+rich login: psql -U rich -d testdb
+testdb=> GRANT ALL PRIVILEGES ON DATABASE "student" TO rich;
+
+testdb=> \c student
+You are now connected to database "student" as user "rich".
+
+To create new database from the OS command line:
+$ createdb -U rich -O rich fast_lms
+
+
+
+
+
+
+

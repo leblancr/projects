@@ -1,0 +1,2 @@
+for local live server:
+python -m http.server
