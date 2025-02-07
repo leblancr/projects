@@ -1,0 +1,71 @@
+Arch:
+yay -S mongodb-bin
+sudo systemctl status mongodb
+sudo systemctl start mongodb
+sudo systemctl enable mongodb  # start on boot
+mongosh  $ mongo shell
+
+
+To create a MongoDB user account with administrator access [5]:
+
+$ mongosh
+
+use admin
+db.createUser(
+  {
+    user: "rich",
+    pwd: "reddmon",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
+  }
+)
+
+mongosh
+Current Mongosh Log ID: 6671cf85da8f3b4261a26a12
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.6
+Using MongoDB:          7.0.11
+Using Mongosh:          2.2.6
+mongosh 2.2.9 is available for download: https://www.mongodb.com/try/download/shell
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+test>  db.getMongo()
+mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.6
+test>
+
+Atlas:
+u: justin thyme
+p: Q324@
+e: rkba1
+Cluster0
+
+database users:
+rich 9hzGTIA1HjKra6fG readWriteAnyDatabase@admin
+rkba1 Hiu55xZe0buUedBd atlasAdmin@admin
+
+user     password    databases
+local:
+rich     reddmon     roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
+
+Atlas:
+rich    9hzGTIA1HjKra6fG    readWriteAnyDatabase@admin
+rkba1   Hiu55xZe0buUedBd    atlasAdmin@admin
+
+
+# Unix:
+# export MONGODB_URI='mongodb+srv://yourusername:yourpasswordgoeshere@pythonquickstart-123ab.mongodb.net/test?retryWrites=true&w=majority'
+
+# local
+#     user: "rich"
+#     pwd: "reddmon"
+export MONGODB_URI_LOCAL='mongodb://rich:reddmon@localhost:27017/'
+
+# Atlas
+export MONGODB_URI_ATLAS='mongodb+srv://rkba1:Hiu55xZe0buUedBd@cluster0.yymy7y6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+
+# Install MongoDB Compass from AUR
+yay -S mongodb-compass
+
+
+Troubleshooting:
+mogodb service wont start:
+sudo rm /tmp/mongodb-27017.sock

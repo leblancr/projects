@@ -1,0 +1,9 @@
+to upgrade:
+download *.rpm file with defaults into Downloads directory.
+extract with ark, it will make /usr/ directory in Downloads.
+Rename usr directory to dbeaver_24.m.n and copy dbeaver_ce directory to /usr/share/:
+/usr/share> sudo cp -r /home/rich/Downloads/dbeaver_24.3.x/share/dbeaver-ce/ .
+Copy the desktop file from renamed usr directory above to /usr/share/applications/:
+/usr/share> sudo cp /home/rich/Downloads/dbeaver_24.3.3/share/applications/dbeaver-ce.desktop applications
+
+
