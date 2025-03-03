@@ -66,10 +66,9 @@
 	url = https://github.com/leblancr/vue-tutorial.git
 [submodule "javascript/svelte-tutorial"]
 	path = javascript/svelte-tutorial
-	url = https://github.com/leblancr/svelte-tutorial
-[submodule "javascript/superheros"]
+	url = https://github.com/leblancr/svelte-tutorial.git[submodule "javascript/superheros"]
 	path = javascript/superheros
-	url = https://github.com/leblancr/superhero
+	url = https://github.com/leblancr/superheros
 [submodule "javascript/npm-experiment"]
 	path = javascript/npm-experiment
 	url = https://github.com/leblancr/npm-experiment
